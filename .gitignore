@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.mypy_cache/
+vllm-0.10.1/
+*.partial.json
+data/processed
+data/output
+moulinette
+.pytest_cache
+*.tmp
+.vscode

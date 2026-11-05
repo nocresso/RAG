@@ -1,0 +1,25 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "Retrieval-Augmented Generation system that answers questions about the vLLM codebase."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.162.0",
+    "fire>=0.7.1",
+    "pydantic>=2.13.4",
+    "torch>=2.14.1",
+    "tqdm>=4.70.0",
+    "transformers>=5.20.1",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.3.0",
+    "mypy>=0.0.1",
+    "pytest>=9.1.1",
+]
+
+[tool.mypy]
+exclude = '^(data|\.venv|moulinette)/'
